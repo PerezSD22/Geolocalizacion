@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    padding: 10px 40px;
+    background: #DD720D;
+    border: 1px solid #a05108;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all .6s ease-out;
+}
+
+.button:hover{
+    background: transparent;
+    color: #DD720D;
+}
+#map { 
+    width: 50%;
+    height: 500px;
+    box-shadow: 5px 5px 5px #888;
+    margin-top: 85px;
+    margin: 0   auto;
+    margin-top: 5rem;
+ }
+
+ .wrapper{
+    position: fixed;
+
+  }
+  
+  .link_wrapper{
+    position: relative;
+  }
+  
+  .wrapper a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #DD720D;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #DD720D;
+    transition: all .35s;
+  }
+  
+  .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icon svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #64c6d5;
+    transition: all .35s;
+  }
+  
+  .wrapper a:hover{
+    width: 200px;
+    border: 3px solid #64c6d5;
+    background: transparent;
+    color: #64c6d5;
+  }
+  
+  .wrapper  a:hover + .icon{
+    border: 3px solid #64c6d5;
+    right: -25%;
+  }
+
+  .lista-opciones select{
+    width: 50%;
+    background-color: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 5px 20px;
+    border: none;
+    outline-color:#6278F7 ;
+    font-size: 1.323rem;
+    border-radius: 1px;
+   
+}

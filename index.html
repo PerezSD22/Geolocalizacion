@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizacion Mapa</title>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+       
+
+        <div class="wrapper">
+            <div class="link_wrapper">
+            <a href="#">Regresar al Home</a>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+                </svg>
+            </div>
+            </div>
+            
+        </div>
+  
+  
+
+    </section>
+
+    <section class="container">
+        <div class="option-container">
+            <div class="lista-opciones">
+                <select id="seleccion_destino" style="margin:18px 80px; padding:8px 5px">
+                    <option >Seleccione su destino</option>
+                    <option value="-2.20283, -79.89408" >ISTG</option>
+                    <option value="-2.22061, -79.88666" >Universidad Politécnica Salesiana</option>
+                    <option value="-2.1052, -79.898" >Parque Samanes</option>
+                    <option value="-34.6063, -58.4358" >Parque Centenario</option>
+                    <option value="-2.1850148, -79.8759606" >Malecon 2000</option>
+                </select>
+            </div>
+      
+    
+        </div>
+        <div class="button-container">
+            <button onclick="getLocation()" type="button"  class="button"> posición actual</button>
+        </div>
+   
+
+        <div id="map"></div>
+    </section>
+
+
+    
+
+
+
+
+
+
+    
+
+<script src="./app.js"></script>
+</body>
+</html>
